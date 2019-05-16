@@ -1,0 +1,694 @@
+@font-face {
+	font-family: 'JannaLT-Bold';
+	src: url('../Font/JannaLT-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'JannaLT-Regular';
+	src: url('../Font/JannaLT-Regular.ttf');
+}
+
+body {
+	font-family: 'JannaLT-Regular',  sans-serif;
+}
+
+
+/*header section style */
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-header.border-bottom.border-gray{
+	padding-top:0;
+	padding-bottom: 0;
+}
+
+.bg-header {
+	background-color: #333333;
+}
+
+.border-gray {
+	border-color: #454545 !important;
+}
+
+.nav-custom{
+	color: #DBDBDB;
+	font-size: 0.6rem;
+}
+
+.main-nav {
+	color: #171717;
+	font-size: 13px;
+}
+
+.active-link {
+	background-color: #C63546;
+	border-radius: 30px;
+	color: #fff;
+}
+
+.navbar-collapse.collapse.show{
+    text-align: right;
+}
+.active-link:hover {
+	color: #e8d5d7;
+	background-color:#db4c5d;
+}
+
+.fa-bars {
+	color: #beef7f;
+}
+
+
+.carousel-indicators li {
+	border-radius: 50%;
+	background-color: #B8B8B8;
+	width: 14px;
+	height: 14px;
+}
+
+.showCase h1 {
+	font-family: 'JannaLT-Regular';
+	font-size: 48px;
+}
+
+.carousel-indicators li.active {
+	background-color: #49D8CF;
+}
+
+.logo {
+	width: 85%;
+	height: auto;
+}
+
+.more {
+	font-size: 26px;
+	padding-right: 5rem;
+	margin-top: 60px;
+}
+
+.header-logo {
+	background:url(../img/Path.png) no-repeat center right;
+	background-size: cover;
+	background-position: center;
+}
+.view-btn {
+	background-color: #8CC63F;
+	border: none;
+	border-radius: 23px;
+	width: 168px;
+	height: 45px;
+	font-size: 18px;
+}
+
+.card {
+	width: 30rem;
+}
+
+.card a {
+	color: #666666;
+}
+
+.buy-btn {
+	width: 180px;
+	font-family: 'JannaLT-Bold', sans-serif;
+	color: #fff;
+}
+
+
+/*main content style */
+
+.manage {
+	background-color: #FAFAFA;
+}
+
+h2 {
+	background-image: url(../img/Path_header.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-family: 'JannaLT-Bold',  sans-serif;
+	font-size: 40px;
+	background-position: center;
+}
+
+/*.manage h2::before {
+	position: absolute;
+	content: url(../img/leftGroup.png);
+	left:24rem;
+}
+
+.manage h2::after {
+	position: absolute;
+	content: url(../img/rightGroup.png);
+	right:24rem;
+}
+*/
+
+
+
+.accounts {
+  	margin:8px 0; 
+  	padding:21px 10px;
+	background: red ;
+	width: 100%;
+	position: relative;
+	background-color: #FAFAFA;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.accounts input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.accounts .content {
+	padding-right: 40px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 25px;
+  right: 14px;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+}
+
+.accounts .checkmark::after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* On mouse-over, add a grey background color */
+.accounts:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.accounts input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.accounts input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.social {
+	position: absolute;
+	top: 9px;
+	left: 10px;
+}
+.manage h5{
+  font-size: 18px;
+  font-family: 'JannaLT-Bold', sans-serif;
+  font-weight: bold;
+}
+
+.manage-accounts {
+	background: #fff;
+	padding: 10px;
+}
+
+.add-btn {
+	background-color: #8CC63F;
+	width: 168px;
+	height: 45px;
+	font-size: 18px;
+	font-family: 'JannaLT-Bold', sans-serif;
+	border-color: #8CC63F;
+	box-shadow: 0 2px 9px #8CC63F;
+	margin-left: 10px; 
+	margin-bottom: 32px;
+	margin-top: 30px;
+	
+}
+
+.next-btn {
+	background-color: #49D8CF;
+	width: 110px;
+	height: 45px;
+	font-size: 18px;
+	font-family: 'JannaLT-Bold', sans-serif;
+	border-color: #49D8CF;
+	box-shadow: 0 2px 9px #49D8CF;
+	border-radius: 11px;
+	margin-bottom: 32px;
+	margin-top: 30px;
+
+}
+.goals_wrapper {
+	text-align: right;
+}
+.goals {
+	border: 1px solid #fff;
+	padding: 25px;
+	color: #666666;
+	height: 69px;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+/*.goals::before {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	color: #E4E4E4;
+	font-family: "Font Awesome 5 Free";
+	content: "\f05a";
+	font-weight: 900;
+} 
+*/
+.fa-info-circle {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	color: #E4E4E4;
+}
+
+.goal-image {
+	position: absolute;
+	top: 11px;
+	right: 18px;
+}
+ .goals.last {
+ 	margin-bottom: 32px;
+ }
+
+.goal-name {
+	margin-right: 70px;
+	font-size: 16px;
+}
+
+
+
+/*Services style*/
+
+.services h4 {
+	margin-top: 32px;
+	font-size: 24px;
+	font-family: 'JannaLT-Bold',sans-serif;
+	margin-bottom: 30px;
+}
+
+.service {
+	width: 100%;
+	height: 193px;
+	padding-top: 30px;
+	background-color: #FAFAFA;
+	border-radius: 20px;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+	
+.service-img {
+	margin-bottom: 35px;
+}
+
+
+/*Portfolio section style*/
+.portfolio {
+	background-color: #FAFAFA;
+	margin-bottom: 35px;
+}
+.portfolio h3 {
+	font-size: 24px;
+	font-family: 'JannaLT-Bold', sans-serif;
+}
+
+
+
+
+.work_image::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-image: linear-gradient(to top, #1B1B1B, #000);
+	opacity: 0.21;
+	border-radius: 15px;
+	z-index: 1;
+}
+
+.work {
+	margin-bottom: 20px;
+}
+
+.work_image {
+	position: relative;
+	/*border:1px solid red; */
+}
+
+.work_image img {
+	width: 100%;
+}
+
+.work_body{
+	/*border:1px solid red; */
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	z-index: 2;
+}
+
+
+.work_body p {
+	font-size: 18px;
+	font-family: 'JannaLT-Bold', sans-serif;
+	color: #fff;
+}
+
+.categorey-btn {
+	background-color: #49D8CF;
+	font-size: 12px;
+	font-family: 'JannaLT-Bold', sans-serif;
+	color: #000;
+	border:none;
+}
+
+.work_body a{
+	font-size: 12px;
+	font-family: 'JannaLT-Bold' , sans-serif;
+	color: #fff;
+	margin-top: 16px;
+
+}
+
+/*SocialMedia section*/
+
+.social-box {
+	width: 181px;
+	padding: 30px 0;
+	font-size: 13px;
+	color: #fff;
+	margin-bottom: 70px;
+}
+
+.caption {
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+.facebook {
+	background-color: #3A579B;
+}
+
+.fa-facebook-f  {
+	color: #586EA7;
+	font-size: 40px;
+}
+
+.twitter {
+	background-color: #50ABF2;
+}
+
+.fa-twitter {
+	color: #79BDF4;
+	font-size: 44px;
+}
+
+.pinterest {
+	background-color: #FF4001;
+}
+
+.fa-pinterest{
+	color: #FE6E51;
+	font-size: 43px;
+}
+
+.instagram {
+	background: #007AB9;
+}
+
+.fa-instagram {
+	color: #5196C5;
+	font-size: 43px;
+}
+
+.dribbble {
+	background-color: #EC4988;
+}
+
+.fa-dribbble {
+	color: #EE75A1;
+	font-size: 43px;
+}
+
+
+.deviantart {
+	background-color: #8CB42D;
+}
+
+.fa-deviantart {
+	color: #A4C366;
+	font-size: 40px;
+}
+
+.icon {
+	width: 10%;
+}
+
+.caption {
+	/*padding-top: 5px;
+	margin-right: 15px;*/
+}
+
+.part {
+	margin-bottom: 40px;
+}
+
+.part h3, .footer_part h3 {
+	font-size: 17px;
+	font-family: 'JannaLT-Bold' , sans-serif;
+	color: #181818;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.part a, .recent a {
+	font-size: 9px;
+}
+
+.footer_part {
+	margin-top: 21px;
+}
+
+.insta_image {
+	width: 100%;
+}
+
+.footer_part input {
+	background-color: #CFCFCF;
+	width: 100%;
+	height: 43px;
+	text-align: right;
+	border-radius: 22px;
+	border: none;
+	margin-top: 21px;
+}
+
+.input-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.input-wrapper::before {
+	position: absolute;
+	color: #C53445;
+	top: 23px;
+    left: 2px;
+   /* font-size: 40px;
+	font-family: "Font Awesome 5 Free";
+	content: "\f1c6";
+	font-weight: 900;*/
+	content: url(../img/send.png);
+}
+
+
+.footer_part input::placeholder {
+	text-align: right;
+	color: #fff;
+	font-size: 11px;
+}
+
+.part_img {
+	display: inline-block;
+	margin-left: 25px;
+	margin-bottom: 38px;
+}
+
+.recent h4 {
+	font-size: 15px;
+	font-family: 'JannaLT-Bold' , sans-serif;
+	margin-bottom: 0;
+}
+
+
+.description {
+	font-size: 11px;
+	margin-top: 21px;
+	margin-bottom: 37px;
+	width: 100%;
+}
+
+.last_part , .info {
+margin-left: 80px;
+}
+
+.info {
+	font-size: 10px;
+}
+
+.part h3 {
+	margin-top: 30px;
+}
+.info i {
+	padding: 15px 15px;
+	margin-bottom: 14px;
+	border-radius: 3px;
+	background-color: #49D8CF;
+	margin-left: 12px;
+}
+
+
+footer {
+	margin-top: 70px;
+	width: 100%;
+	background-color: #1B1B1B;
+	color: #fff;
+}
+
+footer span {
+	display: inline-block;
+	padding: 35px 0;
+	font-size: 13px;
+
+}
+
+
+@media (max-width: 991px) {
+	.navbar-custom {
+		display:none;
+	}
+		
+	.goals{
+		margin-bottom: 10px;
+	}
+
+	.manage h5 {
+		margin-bottom: 10px;
+	}
+
+	.dribbble {
+		margin-left: 182px;
+	}
+
+	.last-section {
+		width: 70%;
+		margin: auto;
+		margin-top: 50px;
+	}
+
+	.info {
+		font-size: 9px;
+	}
+
+	
+}
+
+@media (max-width: 768px) {
+	.card {
+		width: 20rem;
+	}
+	.logo {
+		width: 75%;
+	}
+
+	.header-logo {
+		margin: auto;
+		width: 90%;
+	}
+
+	.goals_wrapper {
+		width: 80%;
+		margin:auto;
+		text-align: center;
+	}
+
+	
+	.manage h5 {
+		margin-bottom: 15px;
+	}
+
+	.services_wrapper, .last_section {
+		width: 80%;
+		margin:auto;
+		text-align: center;
+	}
+
+	.social_media {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	.social-box {
+		width: 50%;
+	}
+	
+	.dribbble {
+		margin-left: 138px;
+	}
+	
+	
+}
+
+
+
+@media (max-width: 576px) {
+	
+	.dribbble {
+		margin-left: 0;
+	}
+
+
+
+	.last-section {
+		width:100%;
+		/*margin: auto;*/
+		margin-top: 50px;
+	}
+
+	.last_part img {
+		width: 70%;
+	}
+
+	.info i {
+		padding : 8px 8px;
+	}
+
+	.recent_serv {
+		margin-top: 50px;
+	}
+}
+
